@@ -1,5 +1,5 @@
 #!groovy
-node('agente1') {
+node('principal') {
     stage('csm') {
         checkout scm 
     }
