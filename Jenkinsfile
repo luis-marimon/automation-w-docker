@@ -3,7 +3,7 @@ node('principal') {
 
     docker.image('docker-image').pull()
 
-    docker.image("${dockerImage}").inside("""--entrypoint=''"""){
+    docker.image('dockerImage').inside("""--entrypoint=''"""){
 
         stage('csm') {
         echo 'getting sources'
